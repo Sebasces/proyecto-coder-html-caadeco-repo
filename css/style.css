@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&display=swap');
+html{
+    font-size: 62.5%; 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+:root {
+    
+    --primary: #f9f4f4;
+    --secondary: #c6d5f8;
+    --alternative: #9C9EFE;
+    --complementary:#acabac;
+    --darkcolor: #301024;
+    --whitecolor: whitesmoke;
+    --footer: #3F72AF;
+    
+    --textRegular: 'Quicksand', sans-serif;
+    --textTitles: 'Nunito', sans-serif;
+
+    --center: center;
+    --left:left;
+
+    --spacingLarge: 5em;
+    --spacingMedium:2.5em;
+    --spacingSmall:2em;
+    --spacingXsmall:0.1em
+    
+}
+
+
+
+.background__Light { 
+    background-color: var(--primary);
+}
+.background__Medium{
+    background-color: var(--alternative);
+}
+.background__Strong {
+    background-color: var(--secondary);
+}
+
+.background__Footer{
+    background-color: #3F72AF;
+}
+
+.background__MediumPlus {
+    background-color: var(--complementary);
+}
+
+
+
+
+/* list */
+
+
+
+/* font */
+
+.fontfamily__Text{
+    font-family: 'Quicksand', sans-serif;
+}
+.fontfamily__Title{ 
+    font-family: 'Nunito', sans-serif;
+}
+
+/* image */
+
+.image_Size__Logo {
+    width:  8em;
+    height: 8em; 
+}
+.image_Promo{
+    width: 25%;
+    height: auto;
+}
+.image_Icon { 
+    width: 4em;
+    height: 4em;
+}
+.image_Producto {
+    width: 12em;
+    height: 12em;
+    
+}
+#image_Large {
+    width: 60%;
+    height: auto;
+}
+.image_medios__Pago{
+    width:8em;
+    height: 8em;
+}
+
+/* allign */
+
+.textCenter {
+    text-align:center;
+    }
+    
+.textLeft {
+    text-align: left;
+    }
+
+
+
+/* Header All */
+
+header {
+    width:100%; 
+    height:auto;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: var(--spacingXsmall);
+}
+.nav ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li { 
+    padding-left: 2em;
+}
+.nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size:1.8em;
+    font-family: var(--textTitles);
+    font-weight: 400;
+    color: var(--primary);
+    
+}
+.nav ul li a:hover{
+    text-shadow: var(--spacing-xsmall);
+    color: var(--darkcolor);
+}
+
+    header div a{
+        font-family: var(--textRegulartex);
+        font-size: 1.5em; 
+        color: var(--primary);
+        text-align: center;
+        text-shadow: rgb(30, 31, 29) var(--spacing-xsmall);
+        text-decoration: none;
+    
+    }
+    /* Footer All */
+
+footer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display:flex;
+    flex-direction: row;
+    background-color: var(--footer);
+    padding: var(--spacingMedium); 
+    justify-content: space-between;    
+}
+#footer_Section1 ul{
+    list-style: none;
+    text-decoration: none;
+}
+#footer_Section1 ul a{
+    text-decoration: none;
+}
+
+.paragraph__Footer{
+    font-size: 1.6em;
+    font-family: var(--textRegular);
+    font-weight: 100;
+    color: var(--primary);
+    text-shadow: #301024 0.1em 0.1em 0.1em;
+}
+
+/*  index.html */
+#grid_Cointainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+#main_Index{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 6em;
+    padding:0.5em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+    gap: 5em;
+}
+
+
+
+
+#sale{
+    align-self: center;
+}
+
+
+#title_FormasdePago{
+    color: var(--darkcolor);
+    font-family: var(--font-title);
+    text-decoration: solid; 
+    text-align: center;
+    font-size: var(--spacingSmall);
+
+    
+}
+
+/*#formas_dePago{
+}*/
+
+
+.formas_dePago{ 
+    font-size: var(--spacingSmall);
+    color:var(--darkcolor);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: 0.1em 0.1em 0.1em var(--complementary);
+
+}
+
+#title_Principal{
+    font-size: 3em;
+    color: var(--primary);
+    font-family: var(--font-title);
+    text-transform: capitalize;
+    text-decoration: solid; 
+    background-color: var(--alternative);
+    text-align: center;
+
+}
+
+#title_destacados{
+    border-color: #464646;
+    border-width: 0.8em;
+    border-style: solid;
+    border-radius: 0.1em;
+    background-color: #3885e3;
+    
+}
+
+.title_SectionIndexProductos{
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: var(--font-title);
+    font-size: medium;
+    line-height: 4em;
+}
+
+
+#destacados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+
+}
+
+#title_RecienLlegados {
+    border-color: #464646;
+    border-width: 0.8em;
+    border-style: solid;
+    border-radius: 0.1em;
+    background-color: #3885e3
+}
+
+#recien_Llegados{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+
+.articulo_Productos{
+    color: white;
+    background-color: var(--complementary);
+    font-family: var(--textRegular) ;
+    font-size: 1.5em;
+    text-align: center;
+}
+.sale_Text{
+    font-family: var(--textRegular);
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--complementary);
+    font-weight: 400;
+    font-style: italic ;
+}
+
+
+
+/* Main index Producto */
+
+
+#grid_mainProductos{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(5,20em);
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 2.5em;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas:
+    "filtro producto producto producto producto"
+    "pago producto producto producto producto"
+    "pago producto producto producto producto"
+    "none producto producto producto producto"
+    "none producto producto producto producto"
+    "none producto producto producto producto";
+    
+}
+#filtro{
+    grid-area: filtro;
+}
+
+#filtro form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#productos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self:flex-start;
+    justify-content: space-between;
+    margin: 1em;
+    grid-area: producto;
+}
+
+
+.filtro{
+    justify-items:center;
+    font-family: var(--textRegular);
+    color: var(--darkcolor);
+    font-weight:500;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em;
+}
+
+.medios_Pago{
+    font-family: var(--textRegular);
+    font-size: var(--spacingSmall);
+    color: #464646;
+    font-weight: 700;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    
+    
+}
+
+#field_Pago{
+    grid-area: pago;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+@media only screen and (max-width:1000px){
+    
+    .articulo_Productos {
+        background-color: white;
+        color: var(--darkcolor);
+    }
+    #grid_mainProductos {
+        
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 1.5em;
+        grid-row-gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+        "filtro filtro filtro filtro filtro"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "pago pago pago pago pago";
+        
+    }
+    
+    #filtro form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #productos{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self:center;
+        justify-content: space-around;
+        margin: 1em;
+    
+    }
+    
+    #field_Pago{
+        text-align: center;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
+
+@media only screen and (max-width:768px) {  
+
+    .articulo_Productos {
+        background-color: white;
+        color: var(--darkcolor);
+    }
+    
+    #destacados{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+    #recien_Llegados{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+
+    #formas_dePago{ 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #grid_mainProductos{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1.5em;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "filtro filtro filtro filtro filtro"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "pago pago pago pago pago";
+        
+    }
+    
+    #filtro form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #productos{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self:flex-start;
+        justify-content: space-around;
+        margin: 1em;
+    
+    }
+    
+    #field_Pago{
+        text-align: center;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
+    
+@media (max-width:550px) {
+    
+    .articulo_Productos {
+        background-color: white;
+        color: var(--darkcolor);
+    }
+    .nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 0.1em;
+    }
+    .nav ul {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    .nav ul li { 
+        padding-left: 0.1em;
+    }
+    footer {
+        display:flex;
+        flex-direction: column;
+        background-color: var(--footer);
+        padding: var(--spacingMedium); 
+        justify-content: center; 
+        align-items: center;  
+        text-align: center;
+    }
+    .textLeft{ 
+        text-align: center;
+    }
+    
+    .articulo_Productos {
+        background-color: white;
+        color: var(--darkcolor);
+    }
+    
+    #destacados{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+    #recien_Llegados{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+
+    #formas_dePago{ 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #grid_mainProductos{
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1.5em;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "filtro filtro filtro filtro filtro"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "pago pago pago pago pago";
+        
+    }
+    
+    #filtro form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #productos{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self:center;
+        justify-content: center;
+        margin: 1em;
+    
+    }
+    
+    #field_Pago{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
