@@ -7,12 +7,14 @@
     <meta name="keywords" content="deco, decoracion, hogar">
     <title>Caddeco -Decoracion para tu hogar-</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>  
     <div id="grid_Cointainer">
         <header>
-            <nav class="background__Strong nav">
+            <nav class="grad__Nav nav">
                 <a href="index.html" class="logo"> 
                     <img class="image_Size__Logo" src="./img/logo_small.png" alt="logo">
                 </a> 
@@ -35,7 +37,7 @@
                 </ul>
             </nav>
             <div class="background__MediumPlus"> 
-                <a href="https://www.Whatsapp.com/" target="_blank">
+                <a href="https://www.whatsapp.com/" target="_blank">
                 <p>Atencion al Cliente y Pedidos por Whatsapp al - +54 911455-6073</p>
                 </a> 
         </div>
@@ -43,13 +45,13 @@
         <main id="main_Index" class="textCenter">
             <section id="image_Heroe">
                 <div>
-                    <img id="image_Large" src="./img/intro.png" alt="decoracion para el hogar">
+                    <img id="image_Large" src="./img/almohadones.intro.png" alt="decoracion para el hogar">
                     <h1 id="title_Principal">Decoración a la medida  de tu casa. Comprá  online  todos los medios de pago</h1>
                 </div>
             </section>
             <section id="sale">
-                <figure class="sale_Text">
-                    <img class="image_Promo" src="./img/Salealmohadonestampado.jpg" alt="Imagen de Almohadones en Sale">
+                <figure class="sale_Text wow animate__heartBeat">
+                    <img class="image_Promo" src="./img/sale1.jpg" alt="Imagen de Almohadones en Sale">
                     <figcaption>Aprovecha Nuestras Ofertas</figcaption>
                     <p>30% Off en Almohadones Estampados</p>
                 </figure>
@@ -134,7 +136,7 @@
                 <div id="tarjetas">
                     <figure>
                         <p>Tarjeta de Credito</p>
-                        <img src="./img/Credit-Card-2-icon.png" alt="">
+                        <img src="./img/creditcard.png" alt="">
                         <figcaption>Paga con Tarjeta en hasta 12 Cuotas con Mercado Pago</figcaption>
                     </figure>
                 </div>
@@ -152,10 +154,10 @@
             <section id="footer_Section1">
                 <ul>
                     <li>
-                        <a href="./contacto.html" class="paragraph__Footer textLeft">Contacto</a>
+                        <a href="./contacto.html" class="paragraph__Footer textLeft textshadow_animation">Contacto</a>
                     </li>
-                    <li class="paragraph__Footer textLeft"">Preguntas Frecuentes</li>
-                    <li class="paragraph__Footer textLeft"">Todos los derechos reservados© Caadeco</li>
+                    <li class="paragraph__Footer textLeft textshadow_animation"">Preguntas Frecuentes</li>
+                    <li class="paragraph__Footer textLeft textshadow_animation">Todos los derechos reservados© Caadeco</li>
                 </ul>
             </section>
             <section id="footer_Section2"> 
@@ -178,11 +180,15 @@
                             <p>Sucribite al newsletter</p>
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email">
-                            <input type="submit" value="enviar">
+                            <input class="grad__Button" type="submit" value="enviar">
                         </div>
                 </form>
             </section>
         </footer>
     </div>  
+    <script src="js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
 </body>
 </html>
