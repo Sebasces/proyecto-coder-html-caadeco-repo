@@ -13,7 +13,6 @@
     
 </head>
 <body>
-    <div id="grid_Cointainer">
         <header>
             <nav class="navbar navbar-expand-md navbar-light grad__Nav">
                 <div class="container-fluid">
@@ -39,6 +38,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link navbar_text" href="./contacto.html">Contacto</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -53,41 +53,33 @@
             <section id="grid_mainProductos">
                 <div id="filtro">
                     <form class="filtroProductos" action="">
-                        <div class="filtro">
-                            <label for="categoria">Categoria</label>
-                                <select name="categoria">
-                                    <option value="almohadones">Almohadones</productos>
-                                    <option value="manteles">Manteles</option>
-                                    <option value="cortinas">Cortinas</option>
-                                    <option value="Deco de mesa">Deco de mesa</option>
-                                </select>
+                        <div>    
+                            <div class="filtro">
+                                <h2>Ordenar por</h2>
+                            </div>
+                            <select class="form-select filtro mb-3" aria-label="Categoria">
+                                <option selected>Categoria</option>
+                                <option value="1">Almohadones</option>
+                                <option value="2">Cortinas</option>
+                            </select>
+                            <select class="form-select  filtro mb-3" aria-label="Categoria">
+                                <option selected>Color</option>
+                                <option value="1">Claro</option>
+                                <option value="2">Oscuro</option>
+                                <option value="3">Estampado</option>
+                                <option value="4">Con leyendas</option>
+                            </select>
                         </div>
-                        <div class="filtro">
-                            <label for="nombreproducto">Nombre del Producto</label>
-                                <select name="nombreproducto">
-                                    <option value="almohadoncapitone">Capitone</productos>
-                                    <option value="almohadongina">Gina</option>
-                                    <option value="almohadongina"> Ampi</option>
-                                </select>
+                        <div class="input-group mb-3">
+                                <span class="input-group-text filtro">Precio desde $</span>
+                                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                    </div>
+                                    <div class="input-group mb-4">
+                                    <span class="input-group-text filtro">Precio hasta $</span>
+                                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                         </div>
-                        <div class="filtro">
-                            <label for="color">Color</label>
-                                <select name="color">
-                                    <option value="blanco">blanco</option></productos>
-                                    <option value="gris">gris</option>
-                                    <option value="beige">beige</option>
-                                    <option value="estampado">estampado</option>
-                                </select>
-                        </div>
-                        <div class="filtro">
-                            <button class="grad__Button">Precio desde</button>
-                                <input type="number">
-                            <button class="grad__Button">Precio hasta</button>
-                                <input type="number">
-                        </div>
-                        <div class="filtro">
-                            <input class="grad__Button" type="submit" value="enviar">
-                            <input class="grad__Button" type="reset"  value="cancelar">
+                        <div class="text-center">
+                            <button type="submit" class="btn grad__Button">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -95,89 +87,117 @@
                     <img class="image_medios__Pago" src="./img/mercadopago1.png" alt=" ">
                     <img class="image_medios__Pago" src="./img/ahora-12.png" alt="">
                 </div>
-            <!--Articulos de productos
-            falta definir imagenes-->
                 <div id="productos">
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img  class="image_Producto" src="./img/almohadones-1.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-lino.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-mes-ratona.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p> 
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadones-1.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-lino.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-lino.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-mes-ratona.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/almohadon-capitone.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-lino.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-mes-ratona.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
-                    <figure class="articulo_Productos">
-                        <img class="image_Producto" src="./img/mantel-mes-ratona.png" alt="imagen producto">
-                        <figcaption>lorem ipsum</figcaption>
-                        <p>Precio: $</p>
-                    </figure>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadones-lino-cama.jpeg" class="card-img-top image_card"  alt="">
+                        </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Almohadon Lino</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios colores</h6>
+                            <p class="card-text">Precio pack X5 $3.500</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadon-con-leyenda.png" class="card-img-top image_card"  alt="">
+                        </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Almohadon Moderno</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en blaco y negro</h6>
+                            <p class="card-text">Precio pack X3 $3.000</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadon-estampado-productos.jpeg" class="card-img-top image_card"  alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Almohadon  Estampado</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios patrones</h6>
+                            <p class="card-text">Precio por unidad $1.300</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadon-con-diseño.png" class="card-img-top image_card"  alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Almohadon  Luxor</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios colores</h6>
+                            <p class="card-text">Precio por unidad $1.500</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/alomohadon-con-leyenda2.webp" class="card-img-top image_card" alt="">
+                        </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Almohadon de leyenda</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios colores</h6>
+                            <p class="card-text">Precio pack x3 $2.500</p>
+                            <a href="./productos.html"class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadon-cubresilla.webp" class="card-img-top image_card"  alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Almohadon  Cubresillas</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios colores</h6>
+                            <p class="card-text">Precio pack x4 $3.800</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadon-capitone.jpeg" class="card-img-top image_card"  alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Almohadon  Capitone</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en varios colores</h6>
+                            <p class="card-text">Precio por unidad $1.800</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/almohadones-decoradores-estilo.webp" class="card-img-top image_card" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Almohadones de Estilo</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Diseño en Lino</h6>
+                            <p class="card-text">Precio por unidad $2.000</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;">
+                            <img src="./img/cortina-tela-tusor.png" class="card-img-top image_card"  alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cortina Tela Tusor</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Cortina x2 paños</h6>
+                            <p class="card-text">Precio $8.500</p>
+                            <a href="./productos.html"class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
+                    <article class="card_Article">
+                        <div class="card" style="width: 15rem;"> 
+                            <img src="./img/Cortina-living.webp" class="card-img-top image_card" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cortina Ambiente Lisa</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Varios colores x2 paños</h6>
+                            <p class="card-text">Precio por unidad $11.700</p>
+                            <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Agregar a carrito</a>
+                        </div>
+                    </article>
                 </div>
             </section>
         </main>
@@ -200,7 +220,7 @@
                         <img src="./img/facebook.png" class="image_Icon" alt="seguinos en facebook">
                     </a>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="./img/instagram.jpg" class="image_Icon" alt="seguinos en instagram">
+                        <img src="./img/instragram-trasnparente.png" class="image_Icon" alt="seguinos en instagram">
                     </a>
                 </div>
             </section>

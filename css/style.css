@@ -54,6 +54,11 @@ html{
 .background__MediumPlus {
     background-color: var(--complementary);
 }
+
+.background_grad{
+    background: linear-gradient(to bottom,var(--complementary),var(--secondary))
+}
+
 .color-dark {
     color:var(--darkcolor);
 }
@@ -70,8 +75,13 @@ html{
     cursor:pointer;
 }
 
+.grad__Button:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
 .grad__Productos{
-    background: linear-gradient(to bottom,#e7d9f8,var(--complementary));
+    background: linear-gradient(to left,#e7d9f8,var(--complementary));
     cursor:pointer;
 }
 
@@ -95,6 +105,7 @@ footer section div a img:hover{
     animation-name: slidein;
 }
 
+
 @keyframes slidein {
     from {
     margin-left: 100%;
@@ -117,11 +128,6 @@ footer section div a img:hover{
     line-height: 1.4em;
 }
 
-#nav_whattext{
-    transform: scale(1.3);
-    transition: transform 1s;
-    text-shadow: none;
-}
 
 .texto_small {
     font-family: var(--textRegular);
@@ -136,12 +142,22 @@ footer section div a img:hover{
     text-align: center;
 }
 
+.texto_titulosmain{
+    font-family: var(--textTitles);
+    font-size: 2em;
+    color: #202020;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+} 
+
 .texto_Contacto {
     font-family: var(--textRegular);
     font-size: 1.8em;
     color: #8a9597;
     text-align: center;
 }
+
 /* font */
 
 .fontfamily__Text{
@@ -166,17 +182,17 @@ footer section div a img:hover{
     width: 4em;
     height: 4em;
 }
-.image_Producto {
-    width: 12em;
-    height: 12em;
-    
+.image_card {
+    width: 100%;
+    height: 25em;
 }
+    
 .image_Large {
     width: 90%;
-    height: 35em;
+    height: 40em;
 }
 .image_medium {
-    width:30em;
+    width:27em;
     height: auto;
 }
 .image_medios__Pago{
@@ -187,7 +203,7 @@ footer section div a img:hover{
 /* allign */
 
 .textCenter {
-    text-align:center;
+    text-align: center;
     }
     
 .textLeft {
@@ -195,32 +211,16 @@ footer section div a img:hover{
     }
 
 
-
-
 /* Header All */
 
 header {
     width:100%; 
     height:auto;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 2;*/
     display:flex;
     flex-direction: column;
 }
-
-/*.nav {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: var(--spacingXsmall);
-}
-.nav ul {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;}*/
-
-
 
 .navbar ul li { 
     padding-left: 1.5em;
@@ -246,11 +246,15 @@ header {
         text-decoration: none;
     
     }
+
+    #nav__whatsapp{
+        width: 100%;
+        max-height: auto;
+    }
+    
     /* Footer All */
 
 footer{
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
     display:flex;
     flex-direction: row;
     background: linear-gradient(to bottom,#3F72AF,var(--alternative));
@@ -273,71 +277,18 @@ footer{
     text-shadow: #301024 0.1em 0.1em 0.1em;
 }
 
-/*  index.html */
-#grid_Cointainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-}
-
 #main_Index{
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
     width: 100%;
     height: auto;
     margin-top: 0.5em;
-    margin-bottom: 6em;
+    margin-bottom: 0em;
     padding:0.5em;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
     align-items: stretch;
-    gap: 5em;
-}
-
-#nav__whatsapp{
-    width: 100%;
-    max-height: auto;
-}
-
-#sale{
-    align-self: center;
-}
-#image_Sale {
-    width: 100%;
-    height: 20em;
-}
-
-#sale_body{
-    background: linear-gradient(to bottom,var(--complementary),var(--secondary));
-    font-family: var(--textRegular);
-    color: var(--primary);
-}
-#sale_Text { 
-    font-family: var(--textRegular);
-    color: var(--primary);
-    font-size: 1.4em;
-}
-
-
-#title_FormasdePago{
-    color: var(--darkcolor);
-    font-family: var(--font-title);
-    text-decoration: solid; 
-    text-align: center;
-    font-size: var(--spacingSmall);
-}
-
-.formas_dePago{ 
-    font-size: var(--spacingSmall);
-    color:var(--darkcolor);
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-shadow: 0.1em 0.1em 0.1em var(--complementary);
+    gap: 2.5em;  
 
 }
 
@@ -349,25 +300,54 @@ footer{
     text-decoration: solid; 
     background-color: var(--alternative);
     text-align: center;
-
 }
 
-#title_destacados{
-    border-color: #464646;
-    border-width: 0.8em;
-    border-style: solid;
-    border-radius: 0.1em;
-    background-color: #3885e3;
-    
+
+
+#sale_body{
+    background: linear-gradient(to bottom,var(--complementary),var(--secondary));
+    font-family: var(--_Regular);
+    color: var(--primary);
 }
 
-.title_SectionIndexProductos{
+.sale_Text{
+    font-family: var(--textRegular);
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--complementary);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.border_none{
+    border-width: 0em;
+}
+
+/* Cards Productos */
+
+.card_Article{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: whitesmoke;
+    background: linear-gradient(to left,var(--complementary),var(--secondary));
+    font-family: var(--textRegular);
+    color: var(--primary);
+    margin-bottom: 2em;
+    padding:1em;
+}
+
+.background_grad{
+    background: linear-gradient(to bottom,var(--complementary),var(--secondary))
+}
+
+
+
+.text_Formasdepago{
+    color: var(--alternative);
     font-family: var(--font-title);
-    font-size: medium;
-    line-height: 4em;
+    text-decoration: solid; 
+    text-align: center;
+    font-size: 1.4em;
 }
 
 
@@ -375,53 +355,39 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;  
-
 }
 
-#title_RecienLlegados {
+.title_SectionIndexProductos{
+    color: whitesmoke;
+    font-family: var(--font-title);
+    font-size: medium;
+    line-height: 20em;
+}
+
+.title_encabezadoIndex {
     border-color: #464646;
-    border-width: 0.8em;
+    border-width: 0.5em;
     border-style: solid;
     border-radius: 0.1em;
-    background-color: #3885e3
+    background-color: var(--alternative);
+    margin-bottom: 2em;
 }
 
 #recien_Llegados{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
+    margin-bottom: 2em;
 }
-
-
-.articulo_Productos{
-    color: white;
-    background: linear-gradient(to right,#e7d9f8,var(--complementary));
-    cursor:pointer;
-    font-family: var(--textRegular) ;
-    font-size: 1.5em;
-    text-align: center;
-}
-.sale_Text{
-    font-family: var(--textRegular);
-    font-size: 1.8em;
-    text-align: center;
-    color: var(--complementary);
-    font-weight: 400;
-    font-style: italic ;
-}
-
-
 
 /* Main index Producto */
 
 #grid_mainProductos{
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
     padding-top: 1em;
     display: grid;
     grid-template-columns: repeat(5,20em);
-    grid-template-rows: repeat(6, auto);
-    grid-row-gap: 2.5em;
+    grid-template-rows: repeat(7, auto);
+    grid-row-gap: 2.0em;
     justify-items: center;
     align-items: center;
     justify-content: space-around;
@@ -458,11 +424,10 @@ footer{
 .filtro{
     justify-items:center;
     font-family: var(--textRegular);
-    color: var(--darkcolor);
-    font-weight:500;
-    font-size: 1.6em;
+    color: var(--alternative);
+    font-weight:Bold;
+    font-size: 1.3em;
     text-align: center;
-    text-shadow: 0.1em 0.1em 0.1em;
 }
 
 .medios_Pago{
@@ -534,47 +499,6 @@ footer{
 
 /* Contacto */
 
-#grid_contacto{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5,auto);
-    align-items: center;
-    justify-items: center;
-    row-gap: 5em;
-    column-gap: 2em;
-    margin:1em;
-    padding: 2em;
-    grid-template-areas: 
-    "whatts whatts"
-    "phone phone"
-    "mail mail"
-    "form  map"
-    "none none"
-}
-
-
-
-
-
-#Whattsapp{
-    grid-area: whatts;
-    border: #464646 solid 0.2em;
-    border-radius: 1em;
-}
-
-#phone{
-    grid-area: phone;
-    border: #464646 solid 0.2em;
-    border-radius: 1em;
-}
-
-#mail {
-    grid-area: mail;
-    border: #464646 solid 0.2em;
-    border-radius: 1em;
-
-}
-
 #formulario_contacto{
     grid-area: form;
     color: var(--alternative);
@@ -588,8 +512,6 @@ footer{
     font-size:1em;    
     margin-left:0;
 }
-
-
 
 #formulario form{
     display:flex;
@@ -605,7 +527,7 @@ footer{
     padding-top: 56.25%;
     }
 
-#iframe-responsivo {
+.iframe-responsivo {
     position: absolute;
     top: 0;
     left: 0;
@@ -614,22 +536,15 @@ footer{
     border: 0;
 }
 
-
-
-.section_Contacto1 div{
-    padding:2em;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1200px){
     
     .articulo_Productos {
         background: white;
-        color: var(--darkcolor);
+        color: var(--darkcolor);}
 
-    }
+    #sale{
+        padding:1em 20em !important;
+        }
     #grid_mainProductos {
         
         padding-top: 1em;
@@ -641,12 +556,12 @@ footer{
         justify-content: center;
         align-items: center;
         grid-template-areas:
-        "filtro filtro filtro filtro filtro"
+        "filtro filtro pago pago none"
         "producto producto producto producto producto"
         "producto producto producto producto producto"
         "producto producto producto producto producto"
         "producto producto producto producto producto"
-        "pago pago pago pago pago";
+        "producto producto producto producto producto";
         
     }
     
@@ -654,7 +569,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     #productos{
@@ -663,7 +578,8 @@ footer{
         flex-wrap: wrap;
         align-self:center;
         justify-content: space-around;
-        margin: 1em;
+        margin: 3em;
+
     
     }
     
@@ -687,25 +603,8 @@ footer{
         padding:1em;
     }
 
-#grid_contacto{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5,auto);
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    row-gap: 5em;
-    column-gap: 2em;
-    margin:1em;
-    padding: 2em;
-    
-    grid-template-areas: 
-    "whatts whatts"
-    "phone phone"
-    "mail mail"
-    "form form"
-    "map map"
-}
+
+
 .section_quienesomos{
     width: 100%;
     height: auto;
@@ -721,13 +620,17 @@ footer{
     padding-top: 1em;  
     margin-top:1em; 
 }
-.scale:hover{
-    transform: scaleX(1.5);
-    cursor: pointer;
-    transition: transform 2seg;
+.video {
+    width: 100%;
+    height: auto;
 }
+
 }   
 @media only screen and (max-width:768px) {  
+
+    #sale{
+        padding:1em 1em !important;
+        }
 
     .articulo_Productos {
         background-color: white;
@@ -744,12 +647,15 @@ footer{
         justify-content: center; 
     }
     
+    .title_SectionIndexProductos{
+    line-height: 2em;
+}
+    .card_Article{
+    background: none;
+    font-family: var(--textRegular);
+    color: var(--darkcolor);
+    margin-bottom: 2em;
 
-    #formas_dePago{ 
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     #grid_mainProductos{
@@ -800,24 +706,6 @@ footer{
         
     }
 
-#grid_contacto{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5,auto);
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    row-gap: 5em;
-    column-gap: 2em;
-    margin:1em;
-    padding: 2em;
-    grid-template-areas: 
-    "whatts whatts"
-    "phone phone"
-    "mail mail"
-    "form form"
-    "map map"
-}
 .section_quienesomos{
     width: 100%;
     height: auto;
@@ -838,34 +726,19 @@ footer{
     width: 100%;
     height: auto;
 }
+.image_medium {
+    width:100%;
+    height: auto;
+}
 }   
 @media (max-width:550px) {
-    
-    /*.image_Producto {
-        width: 5em;
-        height: 5em;}
-    */ 
+   
     
     .articulo_Productos {
         background-color: white;
         color: var(--darkcolor);
     }
-    .nav {
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-right: 0.1em;
-    }
-    .nav ul {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-    }
-    .nav ul li { 
-        padding-left: 0.1em;
-    }
+
     footer {
         display:flex;
         flex-direction: column;
@@ -878,56 +751,7 @@ footer{
     .textLeft{ 
         text-align: center;
     }
-    
-    .articulo_Productos {
-        background-color: white;
-        color: var(--darkcolor);
-    }
-    
-    #destacados{
-        flex-direction: column;
-        justify-content: center; 
-    }
-    
-    #recien_Llegados{
-        flex-direction: column;
-        justify-content: center; 
-    }
-    
 
-    #formas_dePago{ 
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #grid_mainProductos{
-        padding-top: 1em;
-        display: grid;
-        grid-template-columns: repeat(5,20vw);
-        grid-template-rows: repeat(6, auto);
-        grid-column-gap: 1em;
-        grid-row-gap: 1.5em;
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-        "filtro filtro filtro filtro filtro"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "pago pago pago pago pago";
-        
-    }
-    
-    #filtro form{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
     #productos{
         display:flex;
         flex-direction: column;
@@ -938,13 +762,14 @@ footer{
     
     }
     
-    #field_Pago{
+    /*#field_Pago{
         text-align: center;
         display:flex;
         flex-direction: column;
         justify-content: center;
         
-    }
+    }*/
+
     .section_Amedida{
         width: 100%;
         height: auto;
@@ -957,16 +782,17 @@ footer{
         align-content: center;
 }
 
-.video {
+/*.video {
     width: 100%;
     height: auto;
-}
+}*/
+
 #footer_email {
     width: 100%;
     height: auto;
 }
 
-.image_medium {
+/*.image_medium {
     width:100%;
     height: auto
 }
@@ -989,5 +815,5 @@ footer{
     "mail mail"
     "form form"
     "map map"
-}
+}*/
 }
