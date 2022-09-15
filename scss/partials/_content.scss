@@ -1,0 +1,66 @@
+
+// Index.Html//
+
+#main_Index{
+    width: 100%;
+    height: auto;
+    margin-top: $spacing-xs;
+    margin-bottom: none;
+    padding:$spacing-xs;
+    @include flex (column,space-between,stretch);
+    align-content: center;
+    gap: $spacing_lg;
+    div{
+        h1{
+            font-size: $spacing_lg;
+            color: $primarycolor;
+            font-family: $textTitles;
+            text-transform: capitalize;
+            text-decoration: solid; 
+            background-color: $alternativecolor;
+        }
+    }  
+}
+
+#destacados, #recien_Llegados{
+    @include flex (row,space-evenly,stretch);
+    margin-bottom: $spacing_sm;
+}
+
+// Productos //
+
+#grid_mainProductos{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(5,20em);
+    grid-template-rows: repeat(7, auto);
+    grid-row-gap: 2.0em;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas:
+    "filtro producto producto producto producto"
+    "pago producto producto producto producto"
+    "pago producto producto producto producto"
+    "none producto producto producto producto"
+    "none producto producto producto producto"
+    "none producto producto producto producto";
+    }
+
+    #filtro{
+        grid-area: filtro;
+    }
+    #productos{
+            grid-area: producto;
+            @include flex (row, space-between, center);
+            flex-wrap: wrap;
+            align-self:flex-start;
+            margin: $spacing_sm;
+    }
+    #field_Pago{
+            grid-area: pago;
+            @include flex (column,center,center);
+            flex-wrap: wrap;  
+    }
+
+

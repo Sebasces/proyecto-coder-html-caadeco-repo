@@ -9,15 +9,15 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     
 </head>
 <body>  
     <header>
-        <nav class="navbar navbar-expand-md navbar-light grad__Nav">
+        <nav class="navbar navbar-expand-md navbar-light background__Nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                <img src="./img/logo_small.png" alt="imagen logo de Caddeco" width="60" height="35">
+                <img src="./img/logo_small.png" alt="imagen logo de Caddeco" width="150" height="65">
                 </a>
                 <button class="navbar-toggler grad__Button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,9 +43,9 @@
                 </div>
             </div>
         </nav>
-        <div id="nav__whatsapp" class="background__MediumPlus"> 
+        <div class="background__MediumPlus"> 
             <a href="https://www.whatsapp.com/" target="_blank">
-            <p id="nav_whattext">Atencion al Cliente y Pedidos por Whatsapp al - +54 911455-6073</p>
+            <p class="textCenter">Atencion al Cliente y Pedidos por Whatsapp al - +54 911455-6073</p>
             </a> 
         </div>
     </header>
@@ -78,15 +78,15 @@
                 </button>
             </div>
             <div class="col-12">               
-                <h1 id="title_Principal">Decoración a la medida  de tu casa. Comprá  online  todos los medios de pago</h1>
+                <h1 class="text-center">Decoración a la medida  de tu casa. Comprá  online  todos los medios de pago</h1>
             </div>
         </section>
         <section id="destacados">
-            <div class="title_encabezadoIndex">
-                <h2 class="title_SectionIndexProductos">Destacados</h2>
+            <div class="box_title">
+                <h2 class="text_title1">Destacados</h2>
             </div>
-                <article class="card_Article">
-                    <div class="card textoDescripcionProductos textParagraphSmall" style="width: 18rem;">
+                <article class="card_Article background__card">
+                    <div class="card" style="width: 18rem;">
                         <img src="./img/almohadon-con-leyenda.png" class="card-img-top image_card" alt="">
                     </div>
                         <div class="card-body">
@@ -96,7 +96,7 @@
                             <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Comprar online</a>
                         </div>
                 </article>
-                <article class="card_Article">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/almohadon-con-diseño.png" class="card-img-top image_card text-center"  alt="">
                     </div>
@@ -107,7 +107,7 @@
                             <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Comprar online</a>
                         </div>
                 </article>
-                <article class="card_Article">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/alomohadon-con-leyenda2.webp" class="card-img-top image_card"  alt="">
                     </div>
@@ -118,7 +118,7 @@
                         <a href="./productos.html"class="btn btn-secondary background__MediumPlus">Comprar online</a>
                     </div>
                 </article>
-                <article class="card_Article">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/almohadones-decoradores-estilo.webp" class="card-img-top image_card"  alt="">
                     </div>
@@ -131,39 +131,39 @@
                     </div>
             </section>
             <div class="container">
-                <div class="row mb-3">
+                <div id="sale" class="row mb-3">
                     <div  class="col-xl-4 col-lg-12-">
-                        <div  id="sale" class="card wow animate__heartBeat mb-4 border_none" style="width: auto;">
+                        <div class="card wow animate__heartBeat mb-4 border_none" style="width: auto;">
                             <img src="./img/sale1.jpg" class="card-img-top image_card" alt="imagen de almohadones estampados en Sale">
-                            <div class="card-body" id="sale_body">
-                                <h3 class="card-title">Aprovecha Nuestras Ofertas</h3>
-                                <p id="sale_Text">30% Off en Almohadones Estampados</p>
+                            <div class="card-body background_grad">
+                                <h3 class="card-title textp_md"">Aprovecha Nuestras Ofertas</h3>
+                                <p class="text-center  textp_md">30% Off en Almohadones Estampados</p>
                                 <a href="./productos.html" class="btn btn-secondary background__MediumPlus">ir a sale</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-12">
-                        <div class="card text_Formasdepago border_none">
-                            <div class="card-body text_Formasdepago">
-                                <h5 class="text_Formasdepago">Efectivo en  Entrega</h5>
+                        <div class="card text_alternative  text-center border_none">
+                            <div class="card-body  text_alternative">
+                                <h6 class="text_alternative">Efectivo en  Entrega</h6>
                                 <img src="./img/dollar-icon.png" alt="">
                                 <p>En Caba, consultanos por pago en efectivo con entrega</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-12">
-                        <div class="card text_Formasdepago border_none">
-                            <div class="card-body text_Formasdepago">
-                                <h5 class="text_Formasdepago">Tarjeta de Credito</h5>
+                        <div class="card text_alternative text-center border_none">
+                            <div class="card-body text_alternative">
+                                <h6 class="text_alternative">Tarjeta de Credito</h6>
                                 <img src="./img/creditcard.png" alt="">
                                 <p>Paga con  Tarjeta, en hasta 12 Cuotas con Mercado Pago</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-12">
-                        <div class="card text_Formasdepago border_none">
-                            <div class="card-body text_Formasdepago">
-                                <h5 class="text_Formasdepago">Transferencia Bancaria</h5>
+                        <div class="card text_alternative text-center border_none">
+                            <div class="card-body text_alternative text-center">
+                                <h6 class="text_alternative">Transferencia Bancaria</h6>
                                 <img src="./img/bank-icon.png" alt="">
                                 <p>Realiza tus pagos desde casa, de la manera más comoda.</p>
                             </div>
@@ -172,11 +172,11 @@
                 </div>
             </div>
             <section id="recien_Llegados">
-                <div class="title_encabezadoIndex">
-                    <h2 class="title_SectionIndexProductos">Novedades</h2>
+                <div class="box_title">
+                    <h2 class="text_title1">Novedades</h2>
                 </div>
-                <article class="card_Article background__MediumPlus">
-                    <div class="card textoDescripcionProductos textParagraphSmall" style="width: 18rem;">
+                <article class="card_Article background__card">
+                    <div class="card" style="width: 18rem;">
                         <img src="./img/almohadon-infantil-personalizado2.webp" class="card-img-top image_card" alt="">
                     </div>
                         <div class="card-body">
@@ -186,7 +186,7 @@
                             <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Comprar online</a>
                         </div>
                 </article>
-                <article class="card_Article">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/almohadon-infantil-superheroes.jpeg" class="card-img-top image_card image_card"  alt="">
                     </div>
@@ -197,7 +197,7 @@
                             <a href="./productos.html" class="btn btn-secondary background__MediumPlus">Comprar online</a>
                         </div>
                 </article>
-                <article class="card_Article">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/Almohodones-bebe.jpeg" class="card-img-top image_card image_card" alt="">
                     </div>
@@ -208,7 +208,7 @@
                             <a href="./productos.html"class="btn btn-secondary background__MediumPlus">Comprar online</a>
                         </div>
                 </article>
-                <article class="card_Article grad__Productos">
+                <article class="card_Article background__card">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/almohadon-harrypotter.webp" class="card-img-top image_card image_card"alt="">
                     </div>
@@ -222,19 +222,19 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <section id="footer_Section1">
+        <footer class="background__Footer">
+            <section>
                 <ul>
                     <li>
-                        <a href="./contacto.html" class="paragraph__Footer textLeft">Contacto</a>
+                        <a href="./contacto.html" class="text_footer textLeft">Contacto</a>
                     </li>
-                    <li class="paragraph__Footer textLeft"">Preguntas Frecuentes</li>
-                    <li class="paragraph__Footer textLeft"">Todos los derechos reservados© Cadeco</li>
+                    <li class="text_footer textLeft"">Preguntas Frecuentes</li>
+                    <li class="text_footer textLeft"">Todos los derechos reservados© Cadeco</li>
                 </ul>
             </section>
-            <section id="footer_Section2"> 
+            <section> 
                 <div>
-                    <h3 class="paragraph__Footer textCenter">Seguinos en nuestras redes</h3>
+                    <h3 class="text_footer textCenter">Seguinos en nuestras redes</h3>
             </div>
                 <div class="textCenter">
                     <a href="https://es-la.facebook.com/" target="_blank">
@@ -245,10 +245,10 @@
                     </a>
                 </div>
             </section>
-            <section id="footer_Section3">
+            <section>
                 <form action="">
-                    <h3 class="paragraph__Footer textCenter">Enterate de nuestras promos y ofertas</h3>
-                        <div class="paragraph__Footer textCenter">
+                    <h3 class="text_footer textCenter">Enterate de nuestras promos y ofertas</h3>
+                        <div class="text_footer textCenter">
                             <p>Sucribite al newsletter</p>
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="footer_email">
@@ -257,8 +257,6 @@
                 </form>
             </section>
         </footer>
-        </div>
-    </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
             <script>

@@ -1,0 +1,41 @@
+header {    
+    width:100%; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    @include flex (column, space-between, stretch);
+    div{
+        width: 100%;
+        p{font-family:$textRegular;
+            font-size: $fontsize_sm; 
+            color: $primarycolor;
+            text-shadow: rgb(30, 31, 29) $spacing-xs;
+            line-height: $spacing_sm;
+            margin-bottom:0em;
+            &:hover{
+                color:$darkcolor;
+            }
+    }
+    }
+}
+
+nav { 
+    ul{
+        li {
+        padding-left: $spacing_sm;
+        padding-right: $spacing_sm;
+        
+        a{
+            text-transform: capitalize;
+            font-size: $fontsize_md;
+            font-family:$textTitles!important;
+            font-weight: $fontweightSmall;
+            color: $primarycolor !important;
+            &:hover{
+                transform: scale(1.4);
+                transition: transform 1s;
+            }
+        }
+        }
+    }
+}

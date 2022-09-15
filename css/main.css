@@ -1,0 +1,489 @@
+/* color */
+/* text */
+/* Spacing */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* backgound Color */
+.background__Light {
+  background-color: #f9f4f4;
+}
+
+.background__Medium {
+  background-color: #9C9EFE;
+}
+
+.background__Strong {
+  background-color: #c6d5f8;
+}
+
+.background__Footer {
+  background: linear-gradient(to bottom, #3F72AF, #9C9EFE);
+}
+
+.background__MediumPlus {
+  background-color: #acabac;
+}
+
+.background_grad {
+  background: linear-gradient(to bottom, #acabac, #c6d5f8);
+}
+
+.background__Nav {
+  background: linear-gradient(to left, #9C9EFE, #5aa1f7);
+}
+
+.background__card {
+  background: linear-gradient(to left, #acabac, #c6d5f8);
+}
+
+/* color */
+.color-dark {
+  color: #301024;
+}
+
+.color_light {
+  color: #f9f4f4;
+}
+
+/* font family */
+.fontfamily__Text {
+  font-family: "Quicksand", sans-serif;
+}
+
+.fontfamily__Title {
+  font-family: "Nunito", sans-serif;
+}
+
+/* content align */
+.align_selfStrech {
+  align-self: strech;
+}
+
+/* text-align */
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.border_none {
+  border-width: 0em;
+}
+
+.image_Logo {
+  width: 6em !important;
+  height: 3.5em !important;
+}
+
+.image_Promo {
+  width: 25%;
+  height: auto;
+}
+
+.image_Icon {
+  width: 4em;
+  height: 4em;
+}
+
+.image_card {
+  width: 100%;
+  height: 25em;
+}
+
+.image_Large {
+  width: 90%;
+  height: 40em;
+}
+
+.image_medium {
+  width: 27em;
+  height: auto;
+}
+
+.image_small {
+  width: 17em;
+  height: 17em;
+}
+
+/*Animaciones */
+.elemento_Anime {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+.grad__Button {
+  background: linear-gradient(to bottom, #acabac, #c6d5f8);
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+
+.grad__Button:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+.textp_md {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8em;
+  color: #f9f4f4;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text_alternative {
+  color: #9C9EFE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+
+.text_title1 {
+  color: #f9f4f4;
+  font-family: "Nunito", sans-serif;
+  font-size: 2em;
+  line-height: 20em;
+}
+
+.box_title {
+  border-color: #acabac;
+  border-width: 0.5em;
+  border-style: solid;
+  border-radius: 0.01em;
+  background-color: #9C9EFE;
+  margin-bottom: 2em;
+  font-weight: 900;
+}
+
+.form_primary {
+  justify-items: center;
+  font-family: "Quicksand", sans-serif;
+  color: #9C9EFE;
+  font-weight: Bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card_Article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  color: #f9f4f4;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header div {
+  width: 100%;
+}
+header div p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  color: #f9f4f4;
+  text-shadow: rgb(30, 31, 29) 0.5em;
+  line-height: 1em;
+  margin-bottom: 0em;
+}
+header div p:hover {
+  color: #301024;
+}
+
+nav ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+nav ul li a {
+  text-transform: capitalize;
+  font-size: 1.8em;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 400;
+  color: #f9f4f4 !important;
+}
+nav ul li a:hover {
+  transform: scale(1.4);
+  transition: transform 1s;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: linear-gradient(to bottom, #3F72AF, #9C9EFE);
+  padding: 2em;
+  justify-content: space-between;
+}
+footer section ul {
+  list-style: none;
+}
+footer section ul li a:hover {
+  text-shadow: 0.5em;
+  color: #301024;
+  transition: transform 1s;
+}
+footer section div a img:hover {
+  transform: scale(1.3);
+  transition: transform 1s;
+}
+
+.text_footer {
+  font-size: 1.8em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #f9f4f4;
+  text-decoration: none;
+}
+
+#main_Index {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: none;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+  gap: 3em;
+}
+#main_Index div h1 {
+  font-size: 3em;
+  color: #f9f4f4;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  text-decoration: solid;
+  background-color: #9C9EFE;
+}
+
+#destacados, #recien_Llegados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 1em;
+}
+
+#grid_mainProductos {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 20em);
+  grid-template-rows: repeat(7, auto);
+  grid-row-gap: 2em;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "filtro producto producto producto producto" "pago producto producto producto producto" "pago producto producto producto producto" "none producto producto producto producto" "none producto producto producto producto" "none producto producto producto producto";
+}
+
+#filtro {
+  grid-area: filtro;
+}
+
+#productos {
+  grid-area: producto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  margin: 1em;
+}
+
+#field_Pago {
+  grid-area: pago;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1200px) {
+  #sale {
+    padding: 1em 20em !important;
+  }
+  .section_Amedida {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    padding: 1em;
+  }
+  .section_quienesomos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding: 1em;
+  }
+  .section_quienesomos div {
+    padding-top: 1em;
+    margin-top: 1em;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #grid_mainProductos {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "filtro filtro pago pago pago" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto";
+  }
+  #filtro {
+    width: 95%;
+  }
+  #field_Pago {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
+  }
+  .image_small {
+    width: 100%;
+    height: 17em;
+  }
+  #destacados, #recien_Llegados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    margin-bottom: 1em;
+  }
+  #destacados .text_title1, #recien_Llegados .text_title1 {
+    line-height: 2em;
+  }
+  .background__card {
+    background: none;
+  }
+  .card_Article {
+    color: #301024;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #sale {
+    padding: 1em 1em !important;
+  }
+  #grid_mainProductos {
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "filtro filtro filtro filtro filtro" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "pago pago pago pago pago";
+  }
+  .section_quienesomos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    padding: 1em;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  #footer_email {
+    width: 100%;
+    height: auto;
+  }
+  .image_medium {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .textLeft {
+    text-align: center;
+  }
+  #productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em;
+  }
+  #footer_email {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
