@@ -1,0 +1,176 @@
+@media only screen and (max-width:1200px){
+    
+    #sale{
+        padding:1em 20em !important;
+        }
+
+
+
+    .section_Amedida{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin:2em;
+        padding:1em;
+    }
+
+
+.section_quienesomos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    margin:2em;
+    padding:1em
+}
+.section_quienesomos div{
+    padding-top: 1em;  
+    margin-top:1em; 
+}
+.video {
+    width: 100%;
+    height: auto;
+}
+}
+@media only screen and (max-width:992px){
+
+
+    #grid_mainProductos {
+        
+        padding-top: $spacing_sm;
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: $spacing_sm;
+        grid-row-gap: $spacing_sm;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+        "filtro filtro pago pago pago"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto";
+        
+        }
+    
+    #filtro {
+        width:95%;
+    }
+    
+    #field_Pago{
+            @include flex (column,center,none);
+            flex-wrap: wrap;  
+    }
+    .image_small{
+        width: 100%;
+        height: 17em;
+    }
+
+    #destacados, #recien_Llegados{
+        @include flex (column,center,none);
+        margin-bottom: $spacing_sm;
+        .text_title1{
+            line-height: 2em;
+        }
+    }
+
+
+.background__card{
+    background: none;
+}
+
+.card_Article{
+    color:$darkcolor;
+}
+}
+@media only screen and (max-width:768px) {  
+
+    #sale{
+        padding:1em 1em !important;
+        }
+
+    #grid_mainProductos{
+        
+        width: 100%;
+        height: auto;
+        padding-top: $spacing_sm;;
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: $spacing_sm;;
+        grid-row-gap: $spacing_sm;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "filtro filtro filtro filtro filtro"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "producto producto producto producto producto"
+        "pago pago pago pago pago";
+        
+    }
+    
+
+.section_quienesomos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    margin:0.5em;
+    padding:1em
+}
+.video {
+    width: 100%;
+    height: auto;
+}
+
+#footer_email {
+    width: 100%;
+    height: auto;
+}
+.image_medium {
+    width:100%;
+    height: auto;
+}
+}   
+@media (max-width:550px) {
+
+
+    footer {
+        display:flex;
+        flex-direction: column;
+        padding: $spacing_md; 
+        justify-content: center; 
+        align-items: center;  
+        text-align: center;
+    }
+    .textLeft{ 
+        text-align: center;
+    }
+
+#productos{
+    @include flex (column, center, center);
+    flex-wrap: wrap;
+    margin: $spacing_sm;
+    
+    }
+    
+#footer_email {
+    width: 100%;
+    height: auto;
+}
+
+}

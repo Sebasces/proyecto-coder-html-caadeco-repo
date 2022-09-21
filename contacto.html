@@ -37,6 +37,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navbar_text" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,71 +48,95 @@
             </a> 
         </div>
     </header>
-    <main id="grid_contacto">
-        <div id="Whattsapp">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <img src="./img/whatsapp.png" class="IconSmall" alt="Contactanos por Whatsapp">
-            </a>
-            <p class="texto_Contacto">Por ventas de productos y consultas chatea con un operador de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs.
-            </p>
+    <main>
+        <section id="Contacto">
+            <div class="card text-center">
+                <div class="card-body mt-3">
+                    <h5 class="card-title texto_Contacto">Contactános por Whatsapp</h5>
+                    <img src="./img/whatsapp.png" class="IconSmall" alt="Contactanos por Whatsapp">
+                    <p class="card-text texto_Contacto">Por ventas de productos y consultas, chatea con un operador de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs.</p>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="btn btn-secondary background__MediumPlus">Chatea por whatsapp</a>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header background__Medium">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title texto_Contacto">Contactános por Teléfono</h5>
+                    <img  src="./img/phone-icon.png" class="IconSmall" alt="icono de teléfono">
+                    <p class="card-text texto_Contacto">Por telefono al 0800-222-5567, de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs.</p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header mb-4 background__Medium">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title  texto_Contacto">Contactános por mail</h5>
+                    <img src="./img/mailicon.png" class="IconSmall" alt="icono de  Mail">
+                    <p class="card-text  texto_Contacto">Alguien del equipo, te responderá dentro de las 48hs.</p>
+                    <a href="mailto:caadeco@gmail.com?Subject=Consulta" target="_blank" class="btn btn-secondary background__MediumPlus">Enviar mail</a>
+                </div>
+                <div class="card-footer text-muted mb-4 border_none background__Medium">
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2  class="textCenter">Sino, podes llenar el formulurio y nos pondremos en contacto. Si querés visitar nuestro Showroom, hacelo de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <form id="formulario_contacto">
+                        <h3 class="textCenter mb-4">Envianos tu Mensaje y te respondermos a la Brevedad</h3> 
+                        <div>
+                            <label for="inputNombre1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInput2 ">    
+                        </div>
+                        <div>
+                            <label for="inputNombre2" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="exampleInput2">
+                        </div>
+                        <div>
+                            <label for="InputEmail1" class="form-label">Dirección de E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">    
+                        </div>
+                        <div>
+                            <label for="InputDate1" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control mb-4" id="exampledated1">
+                        </div>
+                        <div>
+                            <select class="form-select mb-3 form-text">
+                                <option selected class="form-text">Selecciona el Motivo de tu Consulta</option>
+                                <option class="form-text" value="1">Consulta</option>
+                                <option class="form-text" value="2">Deco a Medida</option>
+                                <option class="form-text" value="3">Reclamo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="formControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label mb-2" for="exampleCheck1">Me gustaría sucribirme al newsletter</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label mb-2" for="exampleCheck1">Acepto los términos y Condiciones</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn grad__Button">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="iframe" class="col-md-6  col-sm-12">
+                    <iframe class="iframe-responsivo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9922625285103!2d-58.40798464983696!3d-34.60435716494174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaed53ec7a23%3A0x9edaecda1fe895a!2sAv.%20Corrientes%202821%2C%20C1193AAA%20CABA!5e0!3m2!1ses-419!2sar!4v1663015876730!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
         </div>
-        <div id="phone">
-            <img  src="./img/phone-icon.png" class="IconSmall" alt="icono de teléfono">
-            <p class="displaySectionContacto1 texto_Contacto">Por telefono al 0800-222-5567, de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs
-            </p>
-        </div>
-        <div id="mail">
-            <a href="mailto:caadeco@gmail.com?Subject=Consulta" target="_blank">
-                <img src="./img/mailicon.png" class="IconSmall" alt="icono de  Mail">
-            </a>
-                <p class="displaySectionContacto1 texto_Contacto">Contactanos por mail. Te responderemos dentro de las 48hs.
-                </p>
-        </div>
-        <form id="formulario_contacto">
-            <h3 class="textCenter mb-4">Envianos tu Mensaje y te respondermos a la Brevedad</h3> 
-            <div>
-                <label for="inputNombre1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleInput2 ">    
-            </div>
-            <div>
-                <label for="inputNombre2" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="exampleInput2">
-            </div>
-            <div>
-                <label for="InputEmail1" class="form-label">Dirección de E-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">    
-            </div>
-            <div>
-                <label for="InputDate1" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control mb-4" id="exampledated1">
-            </div>
-            <div>
-                <select class="form-select mb-3 form-text">
-                    <option selected class="form-text">Selecciona el Motivo de tu Consulta</option>
-                    <option class="form-text" value="1">Consulta</option>
-                    <option class="form-text" value="2">Deco a Medida</option>
-                    <option class="form-text" value="3">Reclamo</option>
-                </select>
-            </div>
-            <div>
-                <label for="formControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label mb-2" for="exampleCheck1">Me gustaría sucribirme al newsletter</label>
-            </div>
-                <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label mb-2" for="exampleCheck1">Acepto los términos y Condiciones</label>
-            </div>
-                <button type="submit" class="btn grad__Button">Enviar</button>
-                </form>
-            <div id="iframe">
-                <h3  class="textCenter">Visita nuestro Showroom de Lunes a Viernes de 9:30hs. a 18hs y Sábado de 9:30hs a 13:30hs</h3>
-                <iframe id="iframe-responsivo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.992282297932!2d-58.40798548543041!3d-34.60435666503756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaed53ec7a23%3A0x7a3e903272680432!2sAv.%20Corrientes%202823%2C%20C1193AAA%20CABA!5e0!3m2!1ses-419!2sar!4v1659826264198!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            </section>
     </main>
     <footer>
         <section id="footer_Section1">
@@ -132,7 +157,7 @@
                     <img src="./img/facebook.png" class="image_Icon" alt="seguinos en facebook">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./img/instagram.jpg" class="image_Icon" alt="seguinos en instagram">
+                    <img src="./img/instragram-trasnparente.png" class="image_Icon" alt="seguinos en instagram">
                 </a>
             </div>
         </section>

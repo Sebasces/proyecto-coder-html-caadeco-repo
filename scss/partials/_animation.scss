@@ -1,0 +1,21 @@
+
+/*Animaciones */
+.elemento_Anime{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 200%
+    }
+
+    to {
+    margin-right: 0%;
+    width: 100%;
+    }
+}
+.grad__Button:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}

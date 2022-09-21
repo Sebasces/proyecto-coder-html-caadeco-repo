@@ -1,0 +1,25 @@
+{
+  "name": "Proyecto-Coder-Tienda-Decoracion-caadeco",
+  "version": "1.0.0",
+  "description": "proyecto curso coder Proyecto de tienda de decoración de interiores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebasces/proyecto-coder-html-caadeco-repo.git"
+  },
+  "author": "sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebasces/proyecto-coder-html-caadeco-repo/issues"
+  },
+  "homepage": "https://github.com/Sebasces/proyecto-coder-html-caadeco-repo#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

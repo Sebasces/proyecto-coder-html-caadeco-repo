@@ -1,0 +1,184 @@
+
+/* backgound Color */
+.background__Light { 
+    background-color: $primarycolor;
+}
+.background__Medium{
+    background-color: $alternativecolor;
+}
+.background__Strong {
+    background-color: $secondarycolor;
+}
+.background__Footer{
+    background:linear-gradient(to bottom,$footercolor,$alternativecolor);
+}
+.background__MediumPlus {
+        background-color: $complementarycolor;
+}
+.background_grad{
+    background: linear-gradient(to bottom,$complementarycolor,$secondarycolor)
+}
+
+.background__Nav{
+    background: linear-gradient(to left, $alternativecolor, $navbarcolor);
+}
+.background__card{
+    background: linear-gradient(to left,$complementarycolor,$secondarycolor);
+}
+
+/* color */
+
+.color-dark {
+    color:$darkcolor;
+}
+.color_light{
+    color:$primarycolor;
+
+}
+
+/* font family */
+.fontfamily__Text{
+    font-family: 'Quicksand', sans-serif;
+}
+.fontfamily__Title{ 
+    font-family: 'Nunito', sans-serif;
+}
+
+/* content align */
+
+.align_selfStrech{
+    align-self:strech;
+}
+
+/* text-align */
+
+.textCenter {
+    text-align: center;
+    }
+    
+.textLeft {
+    text-align: left;
+    }
+
+// border //
+
+.border_none{
+    border-width: 0em;
+}
+
+
+//Image y Media//
+.image_Logo {
+    width:  6em !important;
+    height: 3.5em !important; 
+
+}
+.image_Promo{
+    width: 25%;
+    height: auto;
+}
+.image_Icon { 
+    width: 4em;
+    height: 4em;
+}
+.image_card {
+    width: 100%;
+    height: 25em;
+}
+    
+.image_Large {
+    width: 90%;
+    height: 40em;
+}
+.image_medium {
+    width:27em;
+    height: auto;
+}
+.image_small{
+    width: 17em;
+    height: 17em;
+}
+
+/*Animaciones */
+.elemento_Anime{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 200%
+    }
+
+    to {
+    margin-right: 0%;
+    width: 100%;
+    }
+}
+.grad__Button{
+    background:linear-gradient(to bottom,$complementarycolor,$secondarycolor);
+    border-radius: 0.4em;
+    cursor:pointer;
+}
+.grad__Button:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+// text//
+
+.textp_md{
+    font-family:$textRegular;
+    font-size: $fontsize_md;
+    color: $primarycolor;
+    font-weight: $fontweightSmall;
+    font-style: italic;
+    }
+
+.text_alternative{
+    color: $alternativecolor;
+    font-family: $textRegular;
+    font-size: $fontsize_sm;
+    }
+
+
+.text_title1{
+        color: $primarycolor;
+        font-family: $textTitles;
+        font-size: $fontsize_lg;
+        line-height: 20em;
+    }
+
+//BOX //
+
+.box_title {
+        border-color: $complementarycolor;
+        border-width: $spacing_xs;
+        border-style: solid;
+        border-radius: $spacing_xxs;
+        background-color: $alternativecolor;
+        margin-bottom: $spacing_md;
+        font-weight: $fontweightBold;
+}
+
+//form//
+
+.form_primary{
+    justify-items:center;
+    font-family: $textRegular;
+    color: $alternativecolor;
+    font-weight:Bold;
+    font-size: $fontsize_sm;
+    text-align: center;
+
+}
+
+// Cards //
+.card_Article{
+    @include flex (column,center,center);
+    font-family: $textRegular;
+    color: $primarycolor;
+    margin-bottom: $spacing_md;
+    padding: $spacing_sm;
+
+}
