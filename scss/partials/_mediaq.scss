@@ -30,6 +30,9 @@
     width: 100%;
     height: auto;
 }
+
+
+
 }
 @media only screen and (max-width:992px){
 
@@ -66,15 +69,22 @@
         height: 17em;
     }
 
+    .box_title{
+        width: 100%;
+        height:auto;
+    }
     #destacados, #recien_Llegados{
-        @include flex (column,center,none,wrap);
-        margin-bottom: $spacing_sm;
+         
+        @include flex (column,center,center,nowrap);
         .text_title1{
             line-height: $spacing_md;
+            
         }
     }
 
-
+    .textp_md{
+        color:$darkcolor;
+    }
 .background__card{
     background: none;
 }

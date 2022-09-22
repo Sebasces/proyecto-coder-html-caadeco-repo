@@ -188,7 +188,7 @@ a {
   font-size: 1.5em;
 }
 
-.text_title1 {
+.text_title1, .text_titleh1 {
   color: #f9f4f4;
   font-family: "Nunito", sans-serif;
   font-size: 2em;
@@ -197,6 +197,10 @@ a {
 
 .text_alternative_menos {
   font-size: 1em;
+}
+
+.text_titleh1 {
+  color: #9C9EFE;
 }
 
 .box_title {
@@ -494,16 +498,22 @@ footer section div a img:hover {
     width: 100%;
     height: 17em;
   }
+  .box_title {
+    width: 100%;
+    height: auto;
+  }
   #destacados, #recien_Llegados {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: none;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
+    align-items: center;
+    flex-wrap: nowrap;
   }
-  #destacados .text_title1, #recien_Llegados .text_title1 {
+  #destacados .text_title1, #destacados .text_titleh1, #recien_Llegados .text_title1, #recien_Llegados .text_titleh1 {
     line-height: 2em;
+  }
+  .textp_md, .texp_md_dark {
+    color: #301024;
   }
   .background__card {
     background: none;

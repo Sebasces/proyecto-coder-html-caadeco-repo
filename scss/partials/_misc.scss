@@ -170,7 +170,12 @@
     @extend .text_alternative;
     font-size: $fontsize_xs;
     }
-
+.text_titleh1 {
+        @extend .text_title1;
+        color: $alternativecolor;
+        font-weight: map-get($map: $fontweight, $key:bold);
+    
+    }
 
 //BOX //
 
