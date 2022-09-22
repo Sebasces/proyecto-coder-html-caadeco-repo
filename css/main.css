@@ -66,6 +66,14 @@ a {
   color: #f9f4f4;
 }
 
+.color_alternative {
+  color: #9C9EFE;
+}
+
+.color_sale {
+  color: red;
+}
+
 /* font family */
 .fontfamily__Text {
   font-family: "Quicksand", sans-serif;
@@ -155,25 +163,44 @@ a {
   transition: transform 1s;
 }
 
-.textp_md {
+.textp_md, .texp_md_dark {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #f9f4f4;
   font-weight: 400;
   font-style: italic;
 }
 
-.text_alternative {
+.texp_md_dark {
+  color: #acabac;
+  font-size: 1.8em;
+}
+
+.textp_lg {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  color: #301024;
+}
+
+.text_alternative, .text_alternative_menos {
   color: #9C9EFE;
   font-family: "Quicksand", sans-serif;
   font-size: 1.5em;
 }
 
-.text_title1 {
+.text_title1, .text_titleh1 {
   color: #f9f4f4;
   font-family: "Nunito", sans-serif;
   font-size: 2em;
   line-height: 20em;
+}
+
+.text_alternative_menos {
+  font-size: 1em;
+}
+
+.text_titleh1 {
+  color: #9C9EFE;
 }
 
 .box_title {
@@ -183,10 +210,9 @@ a {
   border-radius: 0.01em;
   background-color: #9C9EFE;
   margin-bottom: 2em;
-  font-weight: 900;
 }
 
-.form_primary {
+.form_primary, #formulario_contacto {
   justify-items: center;
   font-family: "Quicksand", sans-serif;
   color: #9C9EFE;
@@ -196,10 +222,12 @@ a {
 }
 
 .card_Article {
+  width: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   font-family: "Quicksand", sans-serif;
   color: #f9f4f4;
   margin-bottom: 2em;
@@ -215,6 +243,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: nowrap;
 }
 header div {
   width: 100%;
@@ -245,6 +274,11 @@ nav ul li a {
 nav ul li a:hover {
   transform: scale(1.4);
   transition: transform 1s;
+}
+
+#image_logo {
+  width: 10em;
+  height: 6.5em;
 }
 
 footer {
@@ -285,6 +319,7 @@ footer section div a img:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
   align-content: center;
   gap: 3em;
 }
@@ -302,6 +337,7 @@ footer section div a img:hover {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: stretch;
+  flex-wrap: wrap;
   margin-bottom: 1em;
 }
 
@@ -341,6 +377,66 @@ footer section div a img:hover {
   flex-wrap: wrap;
 }
 
+.section_Amedida {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 2em;
+  padding: 1em;
+}
+.section_Amedida div {
+  padding: 2em 1em;
+}
+
+#contac_button {
+  padding-top: 2em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.section_quienesomos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 2em;
+  padding: 1em;
+}
+.section_quienesomos div {
+  padding: 2em;
+}
+
+.video {
+  width: auto;
+  height: 40em;
+}
+
+#formulario_contacto {
+  width: 100%;
+}
+
+#iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.iframe-responsivo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media only screen and (max-width: 1200px) {
   #sale {
     padding: 1em 20em !important;
@@ -350,9 +446,9 @@ footer section div a img:hover {
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 2em;
     padding: 1em;
   }
@@ -361,9 +457,9 @@ footer section div a img:hover {
     height: auto;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     margin: 2em;
     padding: 1em;
   }
@@ -402,15 +498,22 @@ footer section div a img:hover {
     width: 100%;
     height: 17em;
   }
+  .box_title {
+    width: 100%;
+    height: auto;
+  }
   #destacados, #recien_Llegados {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: none;
-    margin-bottom: 1em;
+    align-items: center;
+    flex-wrap: nowrap;
   }
-  #destacados .text_title1, #recien_Llegados .text_title1 {
+  #destacados .text_title1, #destacados .text_titleh1, #recien_Llegados .text_title1, #recien_Llegados .text_titleh1 {
     line-height: 2em;
+  }
+  .textp_md, .texp_md_dark {
+    color: #301024;
   }
   .background__card {
     background: none;
@@ -441,9 +544,9 @@ footer section div a img:hover {
     height: auto;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     margin: 0.5em;
     padding: 1em;
   }
@@ -464,9 +567,10 @@ footer section div a img:hover {
   footer {
     display: flex;
     flex-direction: column;
-    padding: 2em;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
     text-align: center;
   }
   .textLeft {

@@ -7,7 +7,7 @@
     margin-top: $spacing-xs;
     margin-bottom: none;
     padding:$spacing-xs;
-    @include flex (column,space-between,stretch);
+    @include flex (column,space-between,stretch,wrap);
     align-content: center;
     gap: $spacing_lg;
     div{
@@ -23,7 +23,7 @@
 }
 
 #destacados, #recien_Llegados{
-    @include flex (row,space-evenly,stretch);
+    @include flex (row,space-evenly,stretch,wrap);
     margin-bottom: $spacing_sm;
 }
 
@@ -52,15 +52,72 @@
     }
     #productos{
             grid-area: producto;
-            @include flex (row, space-between, center);
-            flex-wrap: wrap;
+            @include flex (row, space-between, center, wrap);
             align-self:flex-start;
             margin: $spacing_sm;
     }
     #field_Pago{
             grid-area: pago;
-            @include flex (column,center,center);
-            flex-wrap: wrap;  
+            @include flex (column,center,center,wrap);  
     }
 
+// Main deco a Medida//
 
+.section_Amedida{
+    width: 100%;
+    height: auto;
+    @include flex (row,space-around,center,nowrap);
+    margin: $spacing_md;
+    padding:$spacing_sm;
+    div {
+    padding: $spacing_md $spacing_sm;
+    }
+}
+#contac_button{
+    padding-top:$spacing_md;
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+
+// quienes somos //
+.section_quienesomos{
+    width: 100%;
+    height: auto;
+    @include flex (row, space-between,center,nowrap);
+    margin: $spacing_md;
+    padding:$spacing_sm;
+    div{
+        padding:$spacing_md;
+    }
+}
+
+.video {
+    width: auto;
+    height: 40em;
+}
+
+// Contacto //
+
+
+#formulario_contacto{
+    width: 100%;
+    @extend .form_primary;
+}
+
+
+
+
+#iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    }
+
+.iframe-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

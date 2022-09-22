@@ -24,7 +24,7 @@ footer{
 .text_footer { 
     font-size: $fontsize_md;
     font-family: $textRegular;
-    font-weight: $fontweightSmall;
+    font-weight: map-get($map: $fontweight, $key:small);
     color: $primarycolor;
     text-decoration: none;
 }
