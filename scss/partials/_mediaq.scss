@@ -9,30 +9,22 @@
     .section_Amedida{
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin:2em;
-        padding:1em;
+        @include flex (row,space-around,center,wrap);
+        margin:$spacing_md;
+        padding:$spacing_sm;
     }
 
 
 .section_quienesomos{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;
-    margin:2em;
-    padding:1em
+    @include flex (column-reverse,center,center,nowrap);
+    margin:$spacing_md;
+    padding:$spacing_sm;
 }
 .section_quienesomos div{
-    padding-top: 1em;  
-    margin-top:1em; 
+    padding-top: $spacing_sm;  
+    margin-top:$spacing_sm; 
 }
 .video {
     width: 100%;
@@ -67,8 +59,7 @@
     }
     
     #field_Pago{
-            @include flex (column,center,none);
-            flex-wrap: wrap;  
+            @include flex (column,center,none,wrap);  
     }
     .image_small{
         width: 100%;
@@ -76,10 +67,10 @@
     }
 
     #destacados, #recien_Llegados{
-        @include flex (column,center,none);
+        @include flex (column,center,none,wrap);
         margin-bottom: $spacing_sm;
         .text_title1{
-            line-height: 2em;
+            line-height: $spacing_md;
         }
     }
 
@@ -95,7 +86,7 @@
 @media only screen and (max-width:768px) {  
 
     #sale{
-        padding:1em 1em !important;
+        padding:$spacing_sm $spacing_sm !important;
         }
 
     #grid_mainProductos{
@@ -124,13 +115,9 @@
 .section_quienesomos{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;
-    margin:0.5em;
-    padding:1em
+    @include flex (column-reverse,center,center,nowrap);
+    margin:$spacing_xs;
+    padding:$spacing_sm;
 }
 .video {
     width: 100%;
@@ -150,11 +137,8 @@
 
 
     footer {
-        display:flex;
-        flex-direction: column;
+        @include flex (column, center, center,wrap);
         padding: $spacing_md; 
-        justify-content: center; 
-        align-items: center;  
         text-align: center;
     }
     .textLeft{ 
@@ -162,8 +146,7 @@
     }
 
 #productos{
-    @include flex (column, center, center);
-    flex-wrap: wrap;
+    @include flex (column, center, center,wrap);
     margin: $spacing_sm;
     
     }

@@ -33,7 +33,13 @@
 }
 .color_light{
     color:$primarycolor;
+}
+.color_alternative{
+    color: $alternativecolor;
+}
 
+.color_sale {
+    color: red;
 }
 
 /* font family */
@@ -129,12 +135,23 @@
 
 .textp_md{
     font-family:$textRegular;
-    font-size: $fontsize_md;
+    font-size: $fontsize_sm;
     color: $primarycolor;
-    font-weight: $fontweightSmall;
+    font-weight: map-get($map: $fontweight, $key:small);
     font-style: italic;
     }
+.texp_md_dark {
+    @extend .textp_md;
+    color:$complementarycolor;
+    font-size: $fontsize_md;
+    }
 
+    
+.textp_lg {
+        font-family: $textRegular;
+        font-size: $fontsize_xl;
+        color: $darkcolor;
+}
 .text_alternative{
     color: $alternativecolor;
     font-family: $textRegular;
@@ -149,6 +166,12 @@
         line-height: 20em;
     }
 
+.text_alternative_menos {
+    @extend .text_alternative;
+    font-size: $fontsize_xs;
+    }
+
+
 //BOX //
 
 .box_title {
@@ -158,7 +181,7 @@
         border-radius: $spacing_xxs;
         background-color: $alternativecolor;
         margin-bottom: $spacing_md;
-        font-weight: $fontweightBold;
+        font-weight: map-get($map: $fontweight, $key:bold)
 }
 
 //form//
@@ -174,8 +197,11 @@
 }
 
 // Cards //
+
+
 .card_Article{
-    @include flex (column,center,center);
+    width: 18rem;
+    @include flex (column,center,center,nowrap);
     font-family: $textRegular;
     color: $primarycolor;
     margin-bottom: $spacing_md;
