@@ -33,7 +33,7 @@ a {
   background-color: #9C9EFE;
 }
 
-.background__Strong {
+.background__Lightsecondary {
   background-color: #c6d5f8;
 }
 
@@ -102,8 +102,8 @@ a {
 }
 
 .image_Logo {
-  width: 6em !important;
-  height: 3.5em !important;
+  width: 20em;
+  height: auto;
 }
 
 .image_Promo {
@@ -127,7 +127,7 @@ a {
 }
 
 .image_medium {
-  width: 27em;
+  width: 32em;
   height: auto;
 }
 
