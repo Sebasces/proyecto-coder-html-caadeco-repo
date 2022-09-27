@@ -20,7 +20,7 @@
 }
 
 .background__Nav{
-    background: linear-gradient(to left, $alternativecolor, $navbarcolor);
+    background: $navbarcolor;
 }
 .background__card{
     background: linear-gradient(to left,$complementarycolor,$secondarycolor);
