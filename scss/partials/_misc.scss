@@ -6,7 +6,7 @@
 .background__Medium{
     background-color: $alternativecolor;
 }
-.background__Strong {
+.background__Lightsecondary {
     background-color: $secondarycolor;
 }
 .background__Footer{
@@ -75,8 +75,8 @@
 
 //Image y Media//
 .image_Logo {
-    width:  6em !important;
-    height: 3.5em !important; 
+    width:  20em;
+    height: auto; 
 
 }
 .image_Promo{
@@ -97,7 +97,7 @@
     height: 40em;
 }
 .image_medium {
-    width:27em;
+    width: 32em;
     height: auto;
 }
 .image_small{
