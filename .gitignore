@@ -1,3 +1,4 @@
 *.pdf
-node_modules
-imagenes-prueba
+node_modules/
+imagenes-prueba/
+.DS_Store
