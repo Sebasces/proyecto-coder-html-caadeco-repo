@@ -18,7 +18,7 @@ $textRegular: 'Quicksand', sans-serif;
 $textTitles: 'Nunito', sans-serif;
 
 /* Spacing */
-
+$spacing_xxl: 10em;
 $spacing_xl: 5em;
 $spacing_lg:3em;
 $spacing_md:2em;
@@ -36,11 +36,11 @@ $fontsize_xl:2.5em;
 
 // Font weight "
 $fontweight: (
- 'xsmall' : 100,
- 'small' : 400,
- 'Medium' : 700,
- 'Bold': 900,
- ); 
+    'xsmall' : 100,
+    'small' : 400,
+    'Medium' : 700,
+    'Bold': 900,
+    ); 
 
 
 
