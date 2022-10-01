@@ -437,6 +437,17 @@ footer section div a img:hover {
   border: 0;
 }
 
+#error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  margin-top: 10em;
+}
+
 @media only screen and (max-width: 1200px) {
   #sale {
     padding: 1em 20em !important;

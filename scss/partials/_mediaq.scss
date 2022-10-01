@@ -74,7 +74,6 @@
         height:auto;
     }
     #destacados, #recien_Llegados{
-         
         @include flex (column,center,center,nowrap);
         .text_title1{
             line-height: $spacing_md;
@@ -92,6 +91,7 @@
 .card_Article{
     color:$darkcolor;
 }
+
 }
 @media only screen and (max-width:768px) {  
 
