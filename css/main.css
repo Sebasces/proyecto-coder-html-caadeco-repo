@@ -519,6 +519,7 @@ footer section div a img:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    margin: 0em 1em;
   }
   #destacados .text_title1, #destacados .text_titleh1, #recien_Llegados .text_title1, #recien_Llegados .text_titleh1 {
     line-height: 2em;
@@ -526,11 +527,10 @@ footer section div a img:hover {
   .textp_md, .texp_md_dark {
     color: #301024;
   }
-  .background__card {
-    background: none;
-  }
   .card_Article {
+    width: 40%;
     color: #301024;
+    margin-left: 1em;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -542,13 +542,21 @@ footer section div a img:hover {
     height: auto;
     padding-top: 1em;
     display: grid;
-    grid-template-columns: repeat(5, 20vw);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, auto);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     justify-items: center;
     align-items: center;
-    grid-template-areas: "filtro filtro filtro filtro filtro" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "producto producto producto producto producto" "pago pago pago pago pago";
+    grid-template-areas: "filtro" "producto" "pago";
+  }
+  #productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em;
   }
   .section_quienesomos {
     width: 100%;
@@ -573,6 +581,9 @@ footer section div a img:hover {
     width: 100%;
     height: auto;
   }
+  .card_Article {
+    width: 60%;
+  }
 }
 @media (max-width: 550px) {
   footer {
@@ -586,14 +597,6 @@ footer section div a img:hover {
   }
   .textLeft {
     text-align: center;
-  }
-  #productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1em;
   }
   #footer_email {
     width: 100%;

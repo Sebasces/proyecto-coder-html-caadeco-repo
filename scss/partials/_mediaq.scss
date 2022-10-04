@@ -31,12 +31,10 @@
     height: auto;
 }
 
-
-
 }
 @media only screen and (max-width:992px){
 
-
+    
     #grid_mainProductos {
         
         padding-top: $spacing_sm;
@@ -75,21 +73,20 @@
     }
     #destacados, #recien_Llegados{
         @include flex (column,center,center,nowrap);
+        margin: 0em $spacing_sm;
         .text_title1{
             line-height: $spacing_md;
-            
         }
     }
 
     .textp_md{
         color:$darkcolor;
     }
-.background__card{
-    background: none;
-}
 
 .card_Article{
+    width: 40%;
     color:$darkcolor;
+    margin-left: $spacing_sm;
 }
 
 }
@@ -105,22 +102,25 @@
         height: auto;
         padding-top: $spacing_sm;;
         display: grid;
-        grid-template-columns: repeat(5,20vw);
+        grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(6, auto);
         grid-column-gap: $spacing_sm;;
         grid-row-gap: $spacing_sm;
         justify-items: center;
         align-items: center;
         grid-template-areas:
-        "filtro filtro filtro filtro filtro"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "producto producto producto producto producto"
-        "pago pago pago pago pago";
+        "filtro"
+        "producto"
+        "pago";
         
     }
     
+    #productos{
+        @include flex (column, center, center,wrap);
+        margin: $spacing_sm;
+        
+        }
+
 
 .section_quienesomos{
     width: 100%;
@@ -142,7 +142,10 @@
     width:100%;
     height: auto;
 }
-}   
+.card_Article{
+    width: 60%;
+}
+}
 @media (max-width:550px) {
 
 
@@ -155,11 +158,7 @@
         text-align: center;
     }
 
-#productos{
-    @include flex (column, center, center,wrap);
-    margin: $spacing_sm;
-    
-    }
+
     
 #footer_email {
     width: 100%;
